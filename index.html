@@ -37,10 +37,14 @@
       max-width: 640px;
       margin: 0 auto;
       height: 100vh;
+      position: relative; /* Added to position child elements absolutely relative to this container */
     }
 
     #game-canvas {
       position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
 
     #game-ui {
